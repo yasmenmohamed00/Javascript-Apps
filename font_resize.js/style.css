@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .medium-size-p{
+   font-size: 2rem;
+} */
+
+.main{
+    background-color: #f6eee8;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    
+}
+.block{
+    font-size: 13px;
+    position: relative;
+    margin: auto;
+    width: 408px;
+    height: auto;
+    background-color: #decfef;
+    border-radius: 3px;
+    padding: 2rem;
+    box-shadow: 1rem 2rem rgba(black, .20)
+
+}
+.block__resizing{
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    position: absolute;
+    left: 25.6rem;
+    top: 3rem;
+}
+.block__resizing button{
+   border: none;
+   /* padding: 4px; */
+   background-color: #756477;
+}
+.block__resizing button:active{
+    background-color: #decfef;
+}
+.medium-size{
+    font-size: 1rem;
+}
+.bigger-size{
+    font-size: 1.5rem;
+}
+  

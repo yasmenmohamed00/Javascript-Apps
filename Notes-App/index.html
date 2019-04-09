@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes App</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h3>NotesApp</h3>
+            <i id="add" class="fas fa-plus-circle"></i>
+        </header>
+        <section>
+            <div class="note">
+                <header class="note__header">
+                    <p class="date">Sunday 06 April, 2019 at 2:38PM</p>
+                    <div class="note__header-item">
+                        <i id="note__header-item-check" class="fas fa-pen"></i>
+                        <i id="note__header-item-delete" class="far fa-trash-alt"></i>
+                    </div>
+               </header>
+                <div class="note__body" contenteditable="true">
+                    <h1>Hello, World!</h1>
+                    <hr>
+                    <ul>
+                        <li>Click/Focus to edit.</li>
+                        <li>User can see the date when he created the note.</li>
+                        <li> Add a new note by clicking the plus sign above.</li>
+                        <li>Delete this note.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

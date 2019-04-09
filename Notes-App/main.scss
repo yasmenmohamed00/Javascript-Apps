@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+/* Removes discs from ul */
+ul {
+    list-style: none;
+}
+  input,
+textarea,
+select,
+button {
+  color: inherit; 
+  font: inherit; 
+  letter-spacing: inherit; 
+}
+/*style of app*/
+main{ 
+  width: 40%;
+  height: 100vh;
+  margin: auto;
+ .header{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+   margin-top: 4rem;
+    .fa-plus-circle{
+      position: absolute;
+      font-size: 1.5rem;
+      right: 0;
+      color: rgb(121, 121, 253);
+      cursor: pointer;
+    }
+  }
+  section{
+    height: auto;
+  .note{
+    // height: 316px;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #eee;
+      .fa-pen{
+        color: #92D788;
+        font-size: 1.2rem;
+        margin-right: .3rem;
+      }
+      .fa-trash-alt{
+        color: #C2474B;
+        font-size: 1.2rem;
+        cursor: pointer;
+        &:hover{
+          color: #7a292b;
+        }
+      }
+    
+    }
+    &__body{
+      height: 316px;
+      padding: 1rem;
+      hr{
+        border-top: 1px #ccc;
+        margin: 1rem 0;
+      }
+      ul{
+        li{
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+  h3{
+    color: #C2474B;
+  }
+}

@@ -12,20 +12,20 @@
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <header class="header">
             <h3>NotesApp</h3>
             <i id="add" class="fas fa-plus-circle"></i>
         </header>
-        <section>
-            <div class="note">
+        <ul class="list">
+            <li class="note">
                 <header class="note__header">
                     <p class="date">Sunday 06 April, 2019 at 2:38PM</p>
                     <div class="note__header-item">
-                        <i id="note__header-item-check" class="fas fa-pen"></i>
+                        <i id="note__header-item-check" class="fas fa-check"></i>
                         <i id="note__header-item-delete" class="far fa-trash-alt"></i>
                     </div>
-               </header>
+                </header>
                 <div class="note__body" contenteditable="true">
                     <h1>Hello, World!</h1>
                     <hr>
@@ -36,9 +36,11 @@
                         <li>Delete this note.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-    </main>
+            </li>
+        </ul>
+    </main> 
+
+
     <script src="app.js"></script>
 </body>
 

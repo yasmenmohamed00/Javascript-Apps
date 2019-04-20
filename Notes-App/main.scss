@@ -59,8 +59,9 @@ main{
       cursor: pointer;
     }
   }
-  section{
+  ul{
     height: auto;
+    list-style-position: inside;
   .note{
     // height: 316px;
     background-color: #f9f9f9;
@@ -68,14 +69,19 @@ main{
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 1rem;
+    word-wrap: break-word;
     &__header{
       display: flex;
       justify-content: space-between;
       padding: 1rem;
       background-color: #eee;
-      .fa-pen{
+      .fa-check{
         color: #92D788;
         font-size: 1.2rem;
+        margin-right: .3rem;
+      }
+      .fa-pen{
+        color: #c99c48fd;
         margin-right: .3rem;
       }
       .fa-trash-alt{
@@ -86,7 +92,9 @@ main{
           color: #7a292b;
         }
       }
-    
+    .date{
+      color: rgb(121, 121, 253);
+    }
     }
     &__body{
       height: 316px;
@@ -107,3 +115,4 @@ main{
     color: #C2474B;
   }
 }
+

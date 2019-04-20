@@ -56,36 +56,43 @@ main {
       right: 0;
       color: #7979fd;
       cursor: pointer; }
-  main section {
-    height: auto; }
-    main section .note {
+  main ul {
+    height: auto;
+    list-style-position: inside; }
+    main ul .note {
       background-color: #f9f9f9;
       box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
       border-radius: 5px;
       overflow: hidden;
-      margin-bottom: 1rem; }
-      main section .note__header {
+      margin-bottom: 1rem;
+      word-wrap: break-word; }
+      main ul .note__header {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
         background-color: #eee; }
-        main section .note__header .fa-pen {
+        main ul .note__header .fa-check {
           color: #92D788;
           font-size: 1.2rem;
           margin-right: .3rem; }
-        main section .note__header .fa-trash-alt {
+        main ul .note__header .fa-pen {
+          color: #c99c48fd;
+          margin-right: .3rem; }
+        main ul .note__header .fa-trash-alt {
           color: #C2474B;
           font-size: 1.2rem;
           cursor: pointer; }
-          main section .note__header .fa-trash-alt:hover {
+          main ul .note__header .fa-trash-alt:hover {
             color: #7a292b; }
-      main section .note__body {
+        main ul .note__header .date {
+          color: #7979fd; }
+      main ul .note__body {
         height: 316px;
         padding: 1rem; }
-        main section .note__body hr {
+        main ul .note__body hr {
           border-top: 1px #ccc;
           margin: 1rem 0; }
-        main section .note__body ul li {
+        main ul .note__body ul li {
           margin-bottom: 1rem; }
   main h3 {
     color: #C2474B; }

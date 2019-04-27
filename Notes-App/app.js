@@ -2,11 +2,12 @@
 let list = document.querySelector('.list');
 let addItem = document.querySelector('#add');
 let noteDate = document.querySelector('.date');
-let body = document.querySelector('body')
+let body = document.querySelector('body');
 
 loadEventListener();
 // Load all Event Listeners
 function loadEventListener() {
+
     // Add a new note by clicking the plus sign above.
     addItem.addEventListener('click', addNote);
 
@@ -17,7 +18,8 @@ function loadEventListener() {
 
 }
 
-function addNote(e){
+function addNote(e){  
+getDate();
 //create new note
 let newNote = document.createElement('li');
 newNote.className = 'note';
@@ -27,9 +29,12 @@ newNote.className = 'note';
 
  let noteBody = document.createElement('div');
  noteBody.className = 'note__body';
+ noteBody.value=' ';
+ noteBody.appendChild(document.createTextNode(noteBody.value));
+//  console.log( noteBody)
 //  Click/Focus to edit.
  noteBody.setAttribute('contenteditable', 'true');
-
+ 
  let p = document.createElement('p');
  p.className = 'date';
  p.appendChild(document.createTextNode(today));
@@ -45,10 +50,8 @@ newNote.className = 'note';
                        '<i id="note__header-item-delete" class="far fa-trash-alt"></i>';
 list.insertBefore(newNote, list.childNodes[0]);
 
-
 e.preventDefault();
 }  
-
 
 //write into note
 function writeNote(e){
@@ -59,7 +62,7 @@ function writeNote(e){
         // console.log('hjfghjkk')
     }
     clearTimeout(timer); 
-    timer = setTimeout(stopTyping, 4000);
+    timer = setTimeout(stopTyping, 3000);
 }
 //stop typing in the note and save it
 function stopTyping(){
@@ -75,12 +78,15 @@ function stopTyping(){
      }
    }
 }
+
 // the date when he created the note
-var monthNames = [ "January", "February", "March", "April", "May", "June",
-       "July", "August", "September", "October", "November", "December" ];
-var dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];    
-      
-var today = new Date();
+var today;
+let getDate = function(){
+    var monthNames = [ "January", "February", "March", "April", "May", "June",
+           "July", "August", "September", "October", "November", "December" ];
+    var dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];    
+
+    today = new Date();
     ddd = today.getDay();
     day = today.getDate()
     mmm = today.getMonth();
@@ -91,8 +97,10 @@ var today = new Date();
     hour = hour ? hour : 12; // the hour '0' should be '12'
     min = min < 10 ? '0'+min : min;
     yyy = today.getFullYear();
-    today = dayNames[ddd]+' '+day+' '+monthNames[mmm] +','+' '+yyy +' '+ 'at'+' '+ hour+':'+min+ampm;
 
+    today = dayNames[ddd]+' '+day+' '+monthNames[mmm] +','+' '+yyy +' '+ 'at'+' '+ hour+':'+min+ampm;
+    }    
+   
 
 
 

@@ -43,7 +43,7 @@ button {
 /*style of app*/
 main{ 
   width: 40%;
-  height: 100vh;
+  // height: 100vh;
   margin: auto;
  .header{
    position: relative;
@@ -63,7 +63,6 @@ main{
     height: auto;
     list-style-position: inside;
   .note{
-    // height: 316px;
     background-color: #f9f9f9;
     box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
     border-radius: 5px;
@@ -97,7 +96,7 @@ main{
     }
     }
     &__body{
-      height: 316px;
+      min-height: 300px;
       padding: 1rem;
       hr{
         border-top: 1px #ccc;

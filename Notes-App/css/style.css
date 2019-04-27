@@ -42,7 +42,6 @@ button {
 /*style of app*/
 main {
   width: 40%;
-  height: 100vh;
   margin: auto; }
   main .header {
     position: relative;
@@ -87,7 +86,7 @@ main {
         main ul .note__header .date {
           color: #7979fd; }
       main ul .note__body {
-        height: 316px;
+        min-height: 300px;
         padding: 1rem; }
         main ul .note__body hr {
           border-top: 1px #ccc;

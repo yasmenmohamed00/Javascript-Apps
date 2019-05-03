@@ -10,5 +10,8 @@
   "description": "Notes APP",
   "devDependencies": {
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "tar": "^4.4.8"
   }
 }

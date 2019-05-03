@@ -1,2 +1,2 @@
 # Javascript-Apps
-some sample app by js
+Some Sample App By Js

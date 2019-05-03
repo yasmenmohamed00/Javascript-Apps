@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='css/style.css')
+    title Quiz App
+  body
+   div.quiz
+    p.interface Quiz interface
+    div.question
+     p.question__header <span>1.</span> What does CSS stand for?
+     div.question__choices
+      ul
+        li.question__choices-answer#a 
+          p <span>A</span> Computer Style Sheets
+        li.question__choices-answer#b
+          p <span>B</span> Cascading Style Sheets
+        li.question__choices-answer#c
+          p <span>C</span> Colorful Style Sheets
+        li.question__choices-answer#d
+          p <span>D</span> Creative Style Sheets
+     button.question__send Send <span>&#x203A;</span>
+     script(src='app.js')  

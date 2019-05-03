@@ -1,0 +1,127 @@
+/*Box Sizing*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+/* Removes discs from ul */
+ul {
+    list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  color: inherit; 
+  font: inherit; 
+  letter-spacing: inherit; 
+}
+
+/*style of the app*/
+.quiz{
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    .interface{
+      margin-bottom: 2rem;
+      color:#899bb4;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    .question{
+      width: 550px;
+      &__header{
+        background-color: #28394a;
+        color: #eee;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+      &__choices{
+        ul{
+          li{
+            background-color: white;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            cursor: pointer;
+            &:hover span{
+              background-color: green;
+            }
+            &:hover{
+              color: green;
+            }
+          
+            span{
+              background-color:#28394a;
+              color: white;
+              display: block;
+              float: left;
+              margin-left: -7px;
+              margin-top: -10px;
+              margin-right: 20px;
+              padding: 10px 0;
+              text-align: center;
+              text-transform: uppercase;
+              width: 40px; 
+            }
+          }
+        }
+        .show{
+          color: green;
+          span{
+            background-color: green;
+          }
+        }
+      }
+      &__send{
+        position: relative;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        border: none;
+        background-color: #28394a;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        cursor: pointer;
+        &:hover{
+          background-color: #899bb4;
+        }
+        span{
+          position: absolute;
+          right: 16px;
+          font-size: 29px;  
+          top: 1px;
+        }
+      }
+    }
+}

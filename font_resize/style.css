@@ -37,7 +37,6 @@
 }
 .block__resizing button{
    border: none;
-   /* padding: 4px; */
    background-color: #756477;
 }
 .block__resizing button:active{

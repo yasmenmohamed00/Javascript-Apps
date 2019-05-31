@@ -7,10 +7,8 @@ let corrctA = document.getElementById('b');
 for (var i = 0 ; i < choices.length; i++) {
 
 choices[i].addEventListener('click', function(){
-  // funclink(event);
-  let choice = document.querySelectorAll('.question__choices-answer');
-  for (var i = 0 ; i < choice.length; i++) {
-        choice[i].className = choice[i].className.replace(" show","");
+  for (var i = 0 ; i < choices.length; i++) {
+        choices[i].className = choices[i].className.replace(" show","");
 }
 event.currentTarget.className += " show";
 })

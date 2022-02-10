@@ -9,7 +9,7 @@
   "author": "yasmen",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "fstream": "^1.0.12",
